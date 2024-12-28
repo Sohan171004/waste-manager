@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nextjs-app
+    env: node
+    plan: free
+    branch: main 
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /
+    region: oregon 
